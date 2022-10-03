@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML</title>
+</head>
+<body>
+    <h1>Imagens dinámicas</h1>
+    <p>Adaptação de imagens em várias telas. Tente abrir em vários dispositivos de tamanhos diferentes ou aumente e diminua o tamanho da tela</p>
+
+    <picture>
+        <source media="(max-width: 750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem Flexível">
+    </picture>
+
+    <h1>Reproduzir audio</h1>
+    <p>Uma breve demonstração de como se reproduz audio num site </p>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/WAWERA...PAPA CHATÃO.mp3" type="audio/mpeg">
+        <source src="midia/WAWERA...PAPA CHATÃO.ogg" type="audio/ogg">
+        <source src="midia/WAWERA...PAPA CHATÃO.wav" type="audio/wav">
+        <p>Seu navegador não consegue reproduzir audio. Clica <a href="midia/WAWERA...PAPA CHATÃO.mp3">aqui</a> para baixar o arquivo</p>
+    </audio>
+</body>
+</html>

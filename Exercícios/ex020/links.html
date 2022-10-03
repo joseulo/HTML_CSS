@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criação de Links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: blue;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited{
+            color:darkblue;
+        }
+        a:hover{
+            color: red;
+            text-decoration: underline;
+        }
+        a:active{
+            color: yellow;
+        }
+        .especial{
+            background-color: aquamarine;
+        }
+        .especial::before{
+            content:'*';
+        }
+        .especial::after{
+            content:'*';
+        }
+    </style>
+</head>
+<body>
+    <h1>Links Personalizados</h1>
+    <ul>
+        <li><a href="https:www.jw.org" target="_blank" class="especial">Siste JW</a></li>
+        <li><a href="https:youtube.com/areceitaria/" target="_blank" class="especial">Link do Youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com" target="_blank">Site Curso em Video</a></li>
+    </ul>
+</body>
+</html>
